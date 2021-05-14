@@ -5,18 +5,37 @@ import Image from "react-bootstrap/Image";
 
 function About() {
   return (
-    <Jumbotron>
-      <h1>Who am I?</h1>
-      <p>This is where I will place a few tid bits about myself</p>
-      <Col xs={6} md={4}>
-        <Image
-          src={headshot}
-          alt="Veronica"
-          className="headshot"
-          roundedCircle
-        />
-      </Col>
-    </Jumbotron>
+    <div>
+      <Jumbotron className="App-header">
+        <h1>Who am I?</h1>
+        <div>
+          <Col xs={6} md={4}>
+            <Image
+              src={headshot}
+              alt="Veronica"
+              className="headshot"
+              roundedCircle
+            />
+          </Col>
+        </div>
+      </Jumbotron>
+      <div className="bio-content">
+        <p>
+          With 10 years of proven experience in administrative, accounting
+          concepts, and customer service/facing positions for several different
+          companies, incorporated with my new web development skills I am
+          confident I will make an immediate contributon to any team.
+        </p>
+        <p>
+          Experienced coding bootcamp graduate with extensive background in
+          various coding languages, developing mobile applications, and building
+          websites from the ground up. Specializes in JavaScript and Python.
+          Professional strengths include creative problem solving, written and
+          verbal communication, and time management. Detail oriented mindset
+          from 10+ years experience in the finance industry.
+        </p>
+      </div>
+    </div>
   );
 }
 
