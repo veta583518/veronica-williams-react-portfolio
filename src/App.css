@@ -64,7 +64,6 @@ body {
   font-size: calc(10px + 2vmin);
 }
 .navbar {
-  margin-right: 3em;
   border-top: solid 5px #e0bfb8;
   border-bottom: solid 5px #e0bfb8;
 }
@@ -72,7 +71,6 @@ body {
 .navbar-light .navbar-nav .nav-link {
   font-family: "Roboto", sans-serif;
   color: #e0bfb8;
-  font-size: 1.3em;
   outline: none;
 }
 
