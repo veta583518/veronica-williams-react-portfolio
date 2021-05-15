@@ -1,8 +1,8 @@
 import { Carousel } from "bootstrap";
 import React from "react";
 import WorkDayScheduler from "../../assets/WorkDayScheduler_Screenshot.jpg";
-import Pokefinder from '../../assets/Pokefinder-Screenshot.png'
-import OffBeatenPath from '../../assets/Off-the-Beaten-Path'
+import Pokefinder from "../../assets/Pokefinder-Screenshot.png";
+import OffBeatenPath from "../../assets/Off-the-Beaten-Path.jpg";
 
 function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -26,11 +26,7 @@ function Portfolio() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Pokefinder}
-          alt="Pokefinder"
-        />
+        <img className="d-block w-100" src={Pokefinder} alt="Pokefinder" />
 
         <Carousel.Caption>
           <h3>Pokefinder</h3>
@@ -53,7 +49,6 @@ function Portfolio() {
         </Carousel.Caption>
       </Carousel.Item>
 
-
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -69,7 +64,7 @@ function Portfolio() {
         </Carousel.Caption>
       </Carousel.Item>
 
-          <Carousel.Item>
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src={ArtfulDodger}
@@ -84,7 +79,7 @@ function Portfolio() {
         </Carousel.Caption>
       </Carousel.Item>
 
-          <Carousel.Item>
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src={WorkDayScheduler}
@@ -97,8 +92,8 @@ function Portfolio() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
-      </Carousel.Item>   
-      </Carousel>   
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
