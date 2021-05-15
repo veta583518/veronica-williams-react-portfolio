@@ -1,12 +1,16 @@
 import React from "react";
 import headshot from "../../assets/20160906_190743 (2).jpg";
 import { Col, Jumbotron, Image } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import logo from "../../assets/metal-texture-mono-signature.jpg";
 
 function About() {
   return (
     <div>
       <Jumbotron className="App-header">
-        <div></div>
+        <div>
+          <img src={logo} alt="logo" className="hero-logo" />
+        </div>
       </Jumbotron>
 
       <div className="bio d-flex">

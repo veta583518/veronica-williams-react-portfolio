@@ -27,9 +27,7 @@ body {
 } */
 
 .App-header {
-  background-image: url("../src/assets/3906276.jpg");
-  background-size: cover;
-  background-color: #cccccc; /* if image is unavailable */
+  background-color: black;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
