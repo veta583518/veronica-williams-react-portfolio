@@ -33,7 +33,7 @@ function Portfolio() {
         />
 
         <Carousel.Caption>
-          <h3>Pokefinderr</h3>
+          <h3>Pokefinder</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -52,18 +52,53 @@ function Portfolio() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
 
-    <Carousel.Item>
-      <img
-      className="d-block w-100"
-      src={}
-    </Carousel.Item>
-    <Carousel.Caption>
-      <h3>Artful Dodgerr</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-    
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={NoteTaker}
+          alt="Work Day Scheduler"
+        />
+
+        <Carousel.Caption>
+          <h3>Note Taker</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+          <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={ArtfulDodger}
+          alt="Work Day Scheduler"
+        />
+
+        <Carousel.Caption>
+          <h3>Artful Dodger</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+          <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={WorkDayScheduler}
+          alt="Work Day Scheduler"
+        />
+
+        <Carousel.Caption>
+          <h3>Work Day Scheduler</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>   
+      </Carousel>   
   );
 }
 
