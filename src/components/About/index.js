@@ -1,7 +1,6 @@
 import React from "react";
 import headshot from "../../assets/20160906_190743 (2).jpg";
-import { Col, Jumbotron } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
+import { Col, Jumbotron, Image } from "react-bootstrap";
 
 function About() {
   return (
