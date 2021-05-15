@@ -1,6 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap");
+
+:root {
+  --primary-rose-gold: #e0bfb8;
+  --secondary-smoke: #343a40;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   text-align: center;
-  background-color: #767c83;
 }
 
 /* .App-logo {
@@ -24,13 +36,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #e0bfb8;
+  color: var(--primary-rose-gold);
   margin: 0;
   padding: 0;
-}
-
-.Nav-link {
-  color: #e0bfb8;
 }
 
 @keyframes App-logo-spin {
@@ -51,13 +59,6 @@
   background-color: #515355;
   color: #e0bfb8;
 } */
-.App {
-  background-color: rgb(142, 144, 146);
-}
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .headshot {
   height: 400px;
@@ -69,24 +70,21 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #e0bfb8;
+  color: var(--primary-rose-gold);
   font-weight: 700;
-  font-family: "Courgette", cursive;
-}
-.navbar {
-  border-top: solid 5px #e0bfb8;
-  border-bottom: solid 5px #e0bfb8;
-}
-
-.navbar-light .navbar-nav .nav-link {
   font-family: "Roboto", sans-serif;
-  color: #e0bfb8;
-  outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-  color: #e0bfb8;
+/******** Navi Styles ********/
+navbar a.nav-link {
+  font-weight: 700;
+  letter-spacing: 0.75rem;
+  cursor: pointer;
 }
-
-/* .navbar-light .navbar-nav .nav-link:hover {
-  color: #BA181B; */
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--primary-rose-gold) !important;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "Roboto", sans-serif;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import About from "./components/About";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Nav from "./components/Nav";
+import Navi from "./components/Nav";
 // import Footer from "./components/Footer";
 // import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark">
       <Navi></Navi>
       <main>
         <About></About>
