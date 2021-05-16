@@ -5,13 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-jquery-plugin";
 import Popper from "popper.js";
 import Navi from "./components/Nav/Nav";
-import Portfolio from "./components/Portfolio/Portfolio";
+//import Portfolio from "./components/Portfolio/Portfolio";
+import CarouselContainer from "./components/Portfolio/Portfolio";
 // import Footer from "./components/Footer";
 // import Contact from "./components/Contact";
 // import Resume from "./components/Resume";
 
 function App() {
-  // const [currentPage, setCurrentPage] = useState(pages[0]);
+  // const [currentPage, setCurrentPage] = useState(pages[0]);s
   return (
     <div className="App bg-dark">
       <Navi
@@ -21,8 +22,8 @@ function App() {
       ></Navi>
       <main>
         <div>
-          <Portfolio></Portfolio>
           <About></About>
+          <CarouselContainer></CarouselContainer>
         </div>
       </main>
     </div>

@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap");
 
 :root {
-  --primary-rose-gold: #e0bfb8;
+  --primary-rose-gold: #b3746b;
   --secondary-smoke: #343a40;
+  --tertiary-white: #ffffff;
 }
 body {
   margin: 0;
@@ -27,7 +28,6 @@ body {
 } */
 
 .App-header {
-  background-color: black;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,8 @@ body {
 .headshot {
   height: 400px;
   width: 400px;
+  border: solid 3px var(--tertiary-white);
+  align-self: center;
 }
 .bio-content {
   display: flex;
@@ -85,4 +87,22 @@ navbar a.nav-link {
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: "Roboto", sans-serif;
+}
+.carousel-wrapper {
+  margin: 10px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: solid 4px var(--primary-rose-gold);
+}
+.app-description {
+  background-color: var(--secondary-smoke);
+  border: solid 4px var(--primary-rose-gold);
+  color: var(--primary-rose-gold);
+  font-size: 2rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  color: var(--secondary-smoke) !important;
 }

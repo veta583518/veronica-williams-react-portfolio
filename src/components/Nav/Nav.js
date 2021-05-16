@@ -7,6 +7,7 @@ function Navi(props) {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       {/* <Navbar bg="dark" expand="lg"></Navbar> */}
+      <Navbar.Brand>Veronica Williams</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
