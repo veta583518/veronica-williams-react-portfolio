@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./components/About/About";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,14 +12,11 @@ import CarouselContainer from "./components/Portfolio/Portfolio";
 // import Resume from "./components/Resume";
 
 function App() {
-  // const [currentPage, setCurrentPage] = useState(pages[0]);s
+  const [currentPage, setCurrentPage] = useState("About");
+
   return (
     <div className="App bg-dark">
-      <Navi
-      // pages={pages}
-      // setCurrentPage={setCurrentPage}
-      // currentPage={currentPage}
-      ></Navi>
+      <Navi setCurrentPage={setCurrentPage} currentPage={currentPage}></Navi>
       <main>
         <div>
           <About></About>

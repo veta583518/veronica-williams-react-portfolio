@@ -62,7 +62,6 @@ body {
   height: 400px;
   width: 400px;
   border: solid 3px var(--tertiary-white);
-  align-self: center;
 }
 .bio-content {
   display: flex;
