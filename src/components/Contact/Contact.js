@@ -1,6 +1,27 @@
 import React from "react";
 
-function Contact() {
-  return <form></form>;
+function ContactForm() {
+  return;
+  <section>
+    <h1> Contact Me </h1>
+    <form id="contact-form">
+      <div>
+        // name input
+        <label htmlFor="name">Name:</label>
+        <input type="text" name="name" />
+      </div>
+      <div>
+        //email address
+        <label htmlFor="email">Email address:</label>
+        <input type="email" name="email" />
+      </div>
+      <div>
+        // message text area
+        <label htmlFor="message">Message:</label>
+        <textarea name="message" rows="5" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>;
 }
-export default Contact;
+export default ContactForm;
