@@ -1,22 +1,29 @@
 import React from "react";
-import About from "./components/About";
+import About from "./components/About/About";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.js";
-import Navi from "./components/Nav";
-import Portfolio from "./components/Portfolio";
+import "react-jquery-plugin";
+import Popper from "popper.js";
+import Navi from "./components/Nav/Nav";
+import Portfolio from "./components/Portfolio/Portfolio";
 // import Footer from "./components/Footer";
-// import Portfolio from "./components/Portfolio";
 // import Contact from "./components/Contact";
 // import Resume from "./components/Resume";
 
 function App() {
+  // const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
     <div className="App bg-dark">
-      <Navi></Navi>
+      <Navi
+      // pages={pages}
+      // setCurrentPage={setCurrentPage}
+      // currentPage={currentPage}
+      ></Navi>
       <main>
-        <About></About>
-        <Portfolio></Portfolio>
+        <div>
+          <Portfolio></Portfolio>
+          <About></About>
+        </div>
       </main>
     </div>
   );

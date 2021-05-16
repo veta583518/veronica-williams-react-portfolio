@@ -1,7 +1,6 @@
 import React from "react";
-import headshot from "../../assets/20160906_190743 (2).jpg";
+import headshot from "../../assets/Headshot.jpg";
 import { Col, Jumbotron, Image } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import logo from "../../assets/metal-texture-mono-signature.jpg";
 
 function About() {
