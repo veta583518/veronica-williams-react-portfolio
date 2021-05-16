@@ -8,7 +8,7 @@ import Navi from "./components/Nav/Nav";
 //import Portfolio from "./components/Portfolio/Portfolio";
 import CarouselContainer from "./components/Portfolio/Portfolio";
 // import Footer from "./components/Footer";
-// import Contact from "./components/Contact";
+import ContactForm from "./components/Contact/Contact";
 // import Resume from "./components/Resume";
 
 function App() {
@@ -16,11 +16,14 @@ function App() {
 
   return (
     <div className="App bg-dark">
-      <Navi setCurrentPage={setCurrentPage} currentPage={currentPage}></Navi>
+      <Navi
+      // setCurrentPage={setCurrentPage} currentPage={currentPage}
+      ></Navi>
       <main>
         <div>
+          <ContactForm />
+          {/* <CarouselContainer></CarouselContainer> */}
           <About></About>
-          <CarouselContainer></CarouselContainer>
         </div>
       </main>
     </div>
