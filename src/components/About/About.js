@@ -21,7 +21,7 @@ function About() {
             roundedCircle
           />
         </Col>
-        <Col xs={12} md={8} className="bio-content">
+        <Col xs={8} md={6} className="bio-content">
           <h1 className="text-center">Who am I?</h1>
           <br></br>
           <p>

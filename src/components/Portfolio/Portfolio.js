@@ -36,6 +36,8 @@ function CarouselContainer() {
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>Weather Dashboard</h5>
+            </div>
+            <div>
               <p className="app-description">
                 This application uses open weather's server-side API's to
                 display current weather and also a 5-day forcast.

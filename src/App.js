@@ -13,17 +13,18 @@ import ContactForm from "./components/Contact/Contact";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About");
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
-    <div className="App bg-dark">
+    <div className="App">
       <Navi
       // setCurrentPage={setCurrentPage} currentPage={currentPage}
       ></Navi>
       <main>
         <div>
-          <ContactForm />
-          {/* <CarouselContainer></CarouselContainer> */}
-          <About></About>
+          {/* <ContactForm /> */}
+          <CarouselContainer></CarouselContainer>
+          {/* <About></About> */}
         </div>
       </main>
     </div>

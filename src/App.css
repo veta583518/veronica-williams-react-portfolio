@@ -2,7 +2,7 @@
 
 :root {
   --primary-rose-gold: #b3746b;
-  --secondary-smoke: #343a40;
+  --secondary-smoke: #767c83;
   --tertiary-white: #ffffff;
 }
 body {
@@ -10,11 +10,12 @@ body {
   padding: 0;
   font-family: "Dancing Script", cursive;
   font-family: "Roboto", sans-serif;
+  background-color: var(--secondary-smoke) !important;
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 /* .App-logo {
   height: 40vmin;
@@ -37,6 +38,7 @@ body {
   color: var(--primary-rose-gold);
   margin: 0;
   padding: 0;
+  background-color: var(--secondary-smoke) !important;
 }
 
 @keyframes App-logo-spin {
@@ -98,10 +100,48 @@ navbar a.nav-link {
 .app-description {
   background-color: var(--secondary-smoke);
   border: solid 4px var(--primary-rose-gold);
-  color: var(--primary-rose-gold);
+  color: var(--tertiary-white);
   font-size: 2rem;
 }
 .carousel-control-next,
 .carousel-control-prev {
   color: var(--secondary-smoke) !important;
+}
+/*------------------- Contact Form Styles-----------------*/
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.title-box {
+  text-align: center;
+  color: var(--secondary-smoke);
+  background-color: var(--tertiary-white);
+  font-family: "Courgette", cursive;
+  font-weight: 700px;
+}
+.contact-form-wrapper {
+  padding: 20px;
+  background-color: var(--tertiary-white) !important;
+  width: 70%;
+  border: solid 5px var(--primary-rose-gold);
+  align-content: center;
+}
+form {
+  color: var(--primary-rose-gold);
+  font-weight: 700px;
+  font-size: 1.5rem;
+  background-color: var(--tertiary-white) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-label {
+  justify-content: left;
+}
+form button {
+  border: solid 4px var(--secondary-smoke) !important;
+  background-color: var(--primary-rose-gold) !important;
+  margin-bottom: 20px;
+  width: 300px;
 }
