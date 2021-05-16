@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Col } from "react-bootstrap";
 import { validateEmail } from "../../utils/helpers";
 
-function ContactForm() {
+function Contact() {
   const [validated, setValidated] = useState(false);
   const [formState, setFormState] = useState({
     fistName: "",
@@ -49,85 +49,83 @@ function ContactForm() {
       <div className="title-box">
         <h1 className="">Contact Me</h1>
       </div>
-      <div className="contact-form-wrapper">
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          <Form.Row>
-            <Form.Group as={Col} md="4" controlId="validationCustom01">
-              <Form.Label>First Name:</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                name="firstName"
-                defaultValue={firstName}
-                onBlur={handleChange}
-                aria-describedby="required"
-              />
-              <Form.Text id="required" muted>
-                Required Field!
-              </Form.Text>
-            </Form.Group>
-            <Form.Group as={Col} md="4" controlId="validationCustom02">
-              <Form.Label>Last Name:</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                name="lastName"
-                defaultValue={lastName}
-                onBlur={handleChange}
-                aria-describedby="required"
-              />
-              <Form.Text id="required" muted>
-                Required Field!
-              </Form.Text>
-            </Form.Group>
-          </Form.Row>
-          <Form.Row>
-            <Form.Group as={Col} md="8">
-              <Form.Label htmlFor="email">Email address:</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                defaultValue={email}
-                onBlur={handleChange}
-                className="form-control"
-                aria-describedby="required"
-              />
-              <Form.Text id="required" muted>
-                Required Field!
-              </Form.Text>
-            </Form.Group>
-          </Form.Row>
-          <Form.Row>
-            <Form.Group as={Col} lg="8">
-              <Form.Label htmlFor="message">Message:</Form.Label>
-              <Form.Control
-                as="textarea"
-                name="message"
-                rows="5"
-                defaultValue={message}
-                onBlur={handleChange}
-                className="form-control"
-                aria-describedby="required"
-              />
-              {errorMessage && (
-                <div>
-                  <p className="error-text">{errorMessage}</p>
-                </div>
-              )}
-              <Form.Text id="required" muted>
-                Required Field!
-              </Form.Text>
-            </Form.Group>
-          </Form.Row>
-          <button
-            type="submit"
-            className="btn btn-lg btn-outline-light text-light mt-3"
-          >
-            Submit
-          </button>
-        </Form>
-      </div>
+      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form.Row>
+          <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Label>First Name:</Form.Label>
+            <Form.Control
+              required
+              type="text"
+              name="firstName"
+              defaultValue={firstName}
+              onBlur={handleChange}
+              aria-describedby="required"
+            />
+            <Form.Text id="required" muted>
+              Required Field!
+            </Form.Text>
+          </Form.Group>
+          <Form.Group as={Col} md="4" controlId="validationCustom02">
+            <Form.Label>Last Name:</Form.Label>
+            <Form.Control
+              required
+              type="text"
+              name="lastName"
+              defaultValue={lastName}
+              onBlur={handleChange}
+              aria-describedby="required"
+            />
+            <Form.Text id="required" muted>
+              Required Field!
+            </Form.Text>
+          </Form.Group>
+        </Form.Row>
+        <Form.Row>
+          <Form.Group as={Col} md="8">
+            <Form.Label htmlFor="email">Email address:</Form.Label>
+            <Form.Control
+              type="email"
+              name="email"
+              defaultValue={email}
+              onBlur={handleChange}
+              className="form-control"
+              aria-describedby="required"
+            />
+            <Form.Text id="required" muted>
+              Required Field!
+            </Form.Text>
+          </Form.Group>
+        </Form.Row>
+        <Form.Row>
+          <Form.Group as={Col} lg="8">
+            <Form.Label htmlFor="message">Message:</Form.Label>
+            <Form.Control
+              as="textarea"
+              name="message"
+              rows="5"
+              defaultValue={message}
+              onBlur={handleChange}
+              className="form-control"
+              aria-describedby="required"
+            />
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <Form.Text id="required" muted>
+              Required Field!
+            </Form.Text>
+          </Form.Group>
+        </Form.Row>
+        <button
+          type="submit"
+          className="btn btn-lg btn-outline-light text-light mt-3"
+        >
+          Submit
+        </button>
+      </Form>
     </section>
   );
 }
-export default ContactForm;
+export default Contact;

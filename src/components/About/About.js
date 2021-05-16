@@ -6,14 +6,15 @@ import logo from "../../assets/metal-texture-mono-signature.jpg";
 function About() {
   return (
     <div>
-      <Jumbotron className="App-header">
+      <section className="App-header">
         <div>
           <img src={logo} alt="logo" className="hero-logo" />
+          <p className="logo-text">Full-Stack Developer</p>
         </div>
-      </Jumbotron>
+      </section>
 
-      <div className="bio d-flex">
-        <Col xs={6} md={4}>
+      <section className="bio d-flex">
+        <Col xs={4} md={2} className="imageContainer">
           <Image
             src={headshot}
             alt="Veronica"
@@ -21,7 +22,7 @@ function About() {
             roundedCircle
           />
         </Col>
-        <Col xs={8} md={6} className="bio-content">
+        <Col xs={6} md={4} className="bio-content">
           <h1 className="text-center">Who am I?</h1>
           <br></br>
           <p>
@@ -39,7 +40,7 @@ function About() {
             oriented mindset from 10+ years experience in the finance industry.
           </p>
         </Col>
-      </div>
+      </section>
     </div>
   );
 }

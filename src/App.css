@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap");
 
 :root {
-  --primary-rose-gold: #b3746b;
+  --primary-rose-gold: rgb(179, 116, 107);
   --secondary-smoke: #767c83;
   --tertiary-white: #ffffff;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Dancing Script", cursive;
+  font-family: "Courgette", cursive;
   font-family: "Roboto", sans-serif;
   background-color: var(--secondary-smoke) !important;
+  text-align: center;
 }
 
-/* .App {
+.App {
   text-align: center;
-} */
+}
 
 /* .App-logo {
   height: 40vmin;
@@ -38,7 +39,14 @@ body {
   color: var(--primary-rose-gold);
   margin: 0;
   padding: 0;
-  background-color: var(--secondary-smoke) !important;
+  /* background-color: var(--secondary-smoke) !important; */
+}
+.logo-text {
+  color: var(--tertiary-white);
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
@@ -49,21 +57,21 @@ body {
     transform: rotate(360deg);
   }
 }
-/* .Navi {
-  font-weight: 700;
-  font-size: calc(10px + 2vmin);
-  text-decoration: ;
+.bio {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: #515355;
-  color: #e0bfb8;
-} */
-
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
 .headshot {
-  height: 400px;
-  width: 400px;
-  border: solid 3px var(--tertiary-white);
+  max-height: 400px;
+  max-width: 400px;
+  min-width: 100px;
+  min-height: 100px;
+  /* border: solid 3px var(--tertiary-white); */
+  margin-left: 20px;
 }
 .bio-content {
   display: flex;
@@ -71,19 +79,33 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--primary-rose-gold);
+  color: var(--tertiary-white);
   font-weight: 700;
   font-family: "Roboto", sans-serif;
+
+  margin-bottom: 100px;
 }
 
 /******** Navi Styles ********/
+nav {
+  /* background-color: var(--primary-rose-gold); */
+  color: var(--tertiary-white) !important;
+  font-size: 2rem;
+  font-weight: 700;
+}
 navbar a.nav-link {
   font-weight: 700;
   letter-spacing: 0.75rem;
   cursor: pointer;
 }
+a.nav-link:active {
+  border-top: solid 4px var(--primary-rose-gold);
+  background-color: var(--tertiary-white);
+  color: var(--secondary-smoke);
+}
+
 .navbar-dark .navbar-nav .nav-link {
-  color: var(--primary-rose-gold) !important;
+  color: var(--tertiary-white) !important;
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -105,43 +127,91 @@ navbar a.nav-link {
 }
 .carousel-control-next,
 .carousel-control-prev {
-  color: var(--secondary-smoke) !important;
+  color: var(--primary-rose-gold) !important;
 }
 /*------------------- Contact Form Styles-----------------*/
 .contact-me {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  justify-content: center;
 }
 .title-box {
   text-align: center;
-  color: var(--secondary-smoke);
-  background-color: var(--tertiary-white);
+  color: var(--primary-rose-gold);
+  /* background-color: var(--tertiary-white); */
   font-family: "Courgette", cursive;
   font-weight: 700px;
-}
-.contact-form-wrapper {
-  padding: 20px;
-  background-color: var(--tertiary-white) !important;
-  width: 70%;
-  border: solid 5px var(--primary-rose-gold);
-  align-content: center;
 }
 form {
   color: var(--primary-rose-gold);
   font-weight: 700px;
   font-size: 1.5rem;
-  background-color: var(--tertiary-white) !important;
+  /* background-color: var(--tertiary-white) !important; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 70%;
+  border: solid 5px var(--primary-rose-gold);
+  margin: 25px;
+  padding: 20px;
+  align-content: center;
 }
 .contact-label {
   justify-content: left;
 }
 form button {
-  border: solid 4px var(--secondary-smoke) !important;
+  border: solid 4px var(--tertiary-white) !important;
   background-color: var(--primary-rose-gold) !important;
   margin-bottom: 20px;
   width: 300px;
+}
+form button:hover {
+  background-color: var(--tertiary-white);
+  border-color: var(--primary-rose-gold);
+  outline: var(--primary-rose-gold);
+}
+#contact-me {
+  color: var(--secondary-smoke);
+  background-color: var(--primary-rose-gold);
+  display: flex;
+}
+#contact-me li {
+  font-size: 2.5rem;
+}
+#contact-me ul {
+  list-style: none;
+  display: flex;
+}
+.icon {
+  padding: 20px;
+  color: var(--secondary-smoke);
+}
+.resume-link {
+  font-size: 2rem;
+  color: var(--tertiary-white) !important;
+  width: 10em;
+}
+.skills-wrapper {
+  padding: 25px;
+}
+.Card {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 600px;
+  height: 400px;
+  background-color: ();
+}
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar-brand {
+  font-size: 1.75rem !important;
+  font-family: "Courgette", cursive;
+  color: var(--primary-rose-gold) !important;
+  font-weight: 700;
+}
+.imageContaineer {
+  align-content: center;
 }
