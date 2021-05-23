@@ -19,32 +19,35 @@ function Resume() {
           </a>
         </div>
       </div>
-      <div className="skills-wrapper d-flex justify-content-center">
-        <div className="card flex-column">
-          <h4 className="card-header font-color">Front End</h4>
+      <div className="card-deck mx-2 d-flex justify-content-center">
+        <div className="card flex-column skill-card">
+          <h4 className="card-header">Front End</h4>
           <ul>
-            <li className="font-color">CSS</li>
-            <li className="font-color">JavaScript</li>
-            <li className="font-color">JQuery</li>
-            <li className="font-color">Responsive Design</li>
-            <li className="font-color">Progressive Web Applicaitons</li>
-            <li className="font-color">React</li>
-            <li className="font-color">Redux</li>
-            <li className="font-color">Bootstrap</li>
-            <li className="font-color">Bulma</li>
-            <li className="font-color">Materialize</li>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>JQuery</p>
+            <p>HTML</p>
+            <p>Progressive Web Applicaitons</p>
+            <p>React</p>
+            <p>Redux</p>
+            <p>Bootstrap</p>
+            <p>Bulma</p>
+            <p>Materialize</p>
           </ul>
         </div>
-        <div className=" card flex-column">
-          <h4 className="card-header font-color">Back End</h4>
+        <div className=" card flex-column skill-card">
+          <h4 className="card-header">Back End</h4>
           <ul>
-            <li className="font-color">APIs</li>
-            <li className="font-color">Node</li>
-            <li className="font-color">Express</li>
-            <li className="font-color">MySQL, Sequlize</li>
-            <li className="font-color">MongoDB, Mongoose</li>
-            <li className="font-color">REST</li>
-            <li className="font-color">GraphQL</li>
+            <p>APIs</p>
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>Inquirer.js</p>
+            <p>Sequelize</p>
+            <p>MySQL</p>
+            <p>Mongoose</p>
+            <p>MongoDB Atlas</p>
+            <p>MongoDB</p>
+            <p>GraphQL</p>
           </ul>
         </div>
       </div>

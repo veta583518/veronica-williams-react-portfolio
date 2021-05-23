@@ -57,14 +57,17 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* -------------------- About Me Styles-------------------------- */
 .bio {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
 }
+
 .headshot {
   max-height: 400px;
   max-width: 400px;
@@ -86,7 +89,7 @@ body {
   margin-bottom: 100px;
 }
 
-/******** Navi Styles ********/
+/*------------------------- Navi Styles ------------------------*/
 nav {
   /* background-color: var(--primary-rose-gold); */
   color: var(--tertiary-white) !important;
@@ -111,6 +114,8 @@ a.nav-link:active {
   margin-right: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
+/* -------------------------------Portfolio Styles----------------------- */
 .carousel-wrapper {
   margin: 10px;
   padding: 25px;
@@ -129,7 +134,11 @@ a.nav-link:active {
 .carousel-control-prev {
   color: var(--primary-rose-gold) !important;
 }
-/*------------------- Contact Form Styles-----------------*/
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*------------------------- Contact Form Styles---------------------*/
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -148,10 +157,10 @@ form {
   font-weight: 700px;
   font-size: 1.5rem;
   /* background-color: var(--tertiary-white) !important; */
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  justify-content: center;
-  width: 70%;
+  /* justify-content: center; */
+  /* width: 70%; */
   border: solid 5px var(--primary-rose-gold);
   margin: 25px;
   padding: 20px;
@@ -187,13 +196,19 @@ form button:hover {
   padding: 20px;
   color: var(--secondary-smoke);
 }
+
+/* -----------------------------Resume Styles------------------------- */
 .resume-link {
   font-size: 2rem;
   color: var(--tertiary-white) !important;
   width: 10em;
 }
-.skills-wrapper {
-  padding: 25px;
+.resume-link p {
+  color: var(--tertiary-white);
+}
+.skill-card {
+  color: var(--tertiary-white);
+  background-color: var(--primary-rose-gold) !important;
 }
 .Card {
   margin-left: 2rem;
@@ -202,16 +217,14 @@ form button:hover {
   height: 400px;
   background-color: ();
 }
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .navbar-brand {
   font-size: 1.75rem !important;
   font-family: "Courgette", cursive;
   color: var(--primary-rose-gold) !important;
   font-weight: 700;
 }
-.imageContaineer {
-  align-content: center;
+
+.footer-container {
+  background-color: var(--tertiary-white) !important;
 }

@@ -5,13 +5,12 @@ import { validateEmail } from "../../utils/helpers";
 function Contact() {
   const [validated, setValidated] = useState(false);
   const [formState, setFormState] = useState({
-    fistName: "",
-    lastName: "",
+    name: "",
     email: "",
     message: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const { firstName, lastName, email, message } = formState;
+  const { name, email, message } = formState;
 
   function handleSubmit(e) {
     const form = e.currentTarget;
@@ -49,29 +48,20 @@ function Contact() {
       <div className="title-box">
         <h1 className="">Contact Me</h1>
       </div>
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Form
+        className="m-4"
+        noValidate
+        validated={validated}
+        onSubmit={handleSubmit}
+      >
         <Form.Row>
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
-            <Form.Label>First Name:</Form.Label>
+          <Form.Group as={Col} md="8" controlId="validationCustom01">
+            <Form.Label>Name:</Form.Label>
             <Form.Control
               required
               type="text"
-              name="firstName"
-              defaultValue={firstName}
-              onBlur={handleChange}
-              aria-describedby="required"
-            />
-            <Form.Text id="required" muted>
-              Required Field!
-            </Form.Text>
-          </Form.Group>
-          <Form.Group as={Col} md="4" controlId="validationCustom02">
-            <Form.Label>Last Name:</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              name="lastName"
-              defaultValue={lastName}
+              name="name"
+              defaultValue={name}
               onBlur={handleChange}
               aria-describedby="required"
             />

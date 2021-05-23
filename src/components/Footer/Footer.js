@@ -11,21 +11,21 @@ function Footer() {
   return (
     <section
       id="contact-me"
-      className="contact rounded-larger m-3 p-2 d-flex justify-content-center"
+      className="footer-container contact rounded-larger mx-3 mt-3 p-2 d-flex justify-content-center"
     >
       <footer sticky="bottom">
         <ul>
-          <li>
+          <li className="mx-4">
             <a href="tel:6157195062" alt="telephone" className="icon">
               <FontAwesomeIcon icon={faPhone} />
             </a>
           </li>
-          <li>
+          <li className="mx-4">
             <a href="mailto:veta583518@gmail.com" alt="email" className="icon">
               <FontAwesomeIcon icon={faEnvelopeOpenText} />
             </a>
           </li>
-          <li>
+          <li className="mx-4">
             <a
               href="https://github.com/veta583518"
               alt="github"
@@ -34,7 +34,7 @@ function Footer() {
               <FontAwesomeIcon icon={faGithubSquare} />
             </a>
           </li>
-          <li>
+          <li className="mx-4">
             <a
               href="https://www.linkedin.com/in/veronica-williams-279a11b8/"
               alt="linkedIn"
@@ -43,7 +43,7 @@ function Footer() {
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
-          <li>
+          <li className="mx-4">
             <a
               href="https://twitter.com/vetaCodes?s=09"
               alt="twitter"
