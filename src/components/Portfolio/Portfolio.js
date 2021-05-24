@@ -11,12 +11,12 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 function Portfolio() {
   return (
-    <section id="work" className="card text-light p-2 m-1">
+    <section id="work" className="card m-3">
       <div className="border-bottom">
         <h2 className="section-header card-title text-center">Portfolio</h2>
       </div>
       <CardDeck>
-        <Row>
+        <Row justify-contents-center>
           <Col md="4">
             <Card style={{ width: "18rem" }}>
               <Card.Img

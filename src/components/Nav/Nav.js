@@ -8,10 +8,13 @@ function Navi(props) {
     <section className="m-3">
       <Navbar expand="lg" variant="dark">
         {/* <Navbar bg="dark" expand="lg"></Navbar> */}
-        <Navbar.Brand>Veronica Williams</Navbar.Brand>
+        {/* <Navbar.Brand>Veronica Williams</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="justify-content-center" activeKey="About">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-center"
+        >
+          <Nav activeKey="About">
             <Nav.Link
               href="#about"
               onClick={() => {

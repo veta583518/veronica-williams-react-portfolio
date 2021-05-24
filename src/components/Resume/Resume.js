@@ -20,7 +20,7 @@ function Resume() {
         </div>
       </div>
       <div className="card-deck mx-2 d-flex justify-content-center">
-        <div className="card flex-column skill-card">
+        <div className="card flex-column skill-card shadow-lg">
           <h4 className="card-header">Front End</h4>
           <ul>
             <p>CSS</p>
@@ -35,7 +35,7 @@ function Resume() {
             <p>Materialize</p>
           </ul>
         </div>
-        <div className=" card flex-column skill-card">
+        <div className=" card flex-column skill-card shadow-lg">
           <h4 className="card-header">Back End</h4>
           <ul>
             <p>APIs</p>

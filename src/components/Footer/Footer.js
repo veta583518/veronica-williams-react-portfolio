@@ -11,7 +11,7 @@ function Footer() {
   return (
     <section
       id="contact-me"
-      className="footer-container contact rounded-larger mx-3 mt-3 p-2 d-flex justify-content-center"
+      className="footer-container fixed-bottom bg-white contact rounded-larger mx-3 mt-3 p-2 d-flex justify-content-center"
     >
       <footer sticky="bottom">
         <ul>
