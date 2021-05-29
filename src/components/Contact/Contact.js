@@ -58,18 +58,19 @@ function Contact() {
       <div className="title-box">
         <h1 className="">Contact Me</h1>
       </div>
+
       <div className="contact-container">
-        <div className="contact-info">
+        <div className="contact-info shadow-lg">
           <h3>Contact Information</h3>
           <p>
             Want to get in touch? I'd love to hear from you. Complete this form
             and I will get back to you within 24 hr. You can also reach me at
             one of the below links. I look forward to hearing from you!{" "}
           </p>
-          <div className="contact-icons">
+          <div id="contact-icons">
             <div className="phone">
               <FontAwesomeIcon icon={faPhoneAlt} className="contact-icon" />
-              <a href="tel:615-719-5062">+1(615)719-5062</a>
+              <a href="tel:615-719-5062">+1(615) 719-5062</a>
             </div>
             <div className="email">
               <FontAwesomeIcon
@@ -147,7 +148,7 @@ function Contact() {
           </Form.Row>
           <button
             type="submit"
-            className="btn btn-lg btn-outline-light text-light mt-3"
+            className="btn btn-lg btn-outline-light text-light mt-3 shadow-sm"
           >
             Submit
           </button>
