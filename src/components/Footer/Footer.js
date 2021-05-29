@@ -1,8 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithubSquare,
+  faPhoneAlt,
+  faEnvelopeOpenText,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
   faLinkedinIn,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
@@ -17,7 +20,7 @@ function Footer() {
         <ul>
           <li className="mx-4">
             <a href="tel:6157195062" alt="telephone" className="icon">
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon icon={faPhoneAlt} />
             </a>
           </li>
           <li className="mx-4">
@@ -31,7 +34,7 @@ function Footer() {
               alt="github"
               className="icon"
             >
-              <FontAwesomeIcon icon={faGithubSquare} />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li className="mx-4">

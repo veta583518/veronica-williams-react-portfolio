@@ -146,8 +146,8 @@ a.nav-link:active {
 .contact-me {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   justify-content: center;
+  align-items: center;
 }
 .title-box {
   text-align: center;
@@ -156,8 +156,35 @@ a.nav-link:active {
   font-family: "Courgette", cursive;
   font-weight: 700px;
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.contact-info {
+  background-color: var(--primary-rose-gold);
+  flex: 0 1 40%;
+  border-radius: 15px;
+  padding: 20px;
+}
+.contact-info h3 {
+  font-size: 2rem;
+  font-weight: 450px;
+}
+.contact-info a {
+  color: var(--tertiary-white);
+  margin-left: 10px;
+}
+.contact-info .contact-icon {
+  color: var(--tertiary-white);
+}
 form {
-  color: var(--primary-rose-gold);
+  color: var(--tertiary-white);
   font-weight: 700px;
   font-size: 1.5rem;
   /* background-color: var(--tertiary-white) !important; */
@@ -166,6 +193,7 @@ form {
   /* justify-content: center; */
   /* width: 70%; */
   border: solid 5px var(--primary-rose-gold);
+  border-radius: 15px;
   margin: 3rem;
   padding: 20px;
   align-content: center;

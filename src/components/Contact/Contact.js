@@ -1,6 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Form, Col } from "react-bootstrap";
 import { validateEmail } from "../../utils/helpers";
+import {
+  faPhoneAlt,
+  faEnvelopeOpenText,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedinIn,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   const [validated, setValidated] = useState(false);
@@ -44,11 +54,42 @@ function Contact() {
   }
 
   return (
-    <section className="contact-me">
+    <div className="contact-me">
       <div className="title-box">
         <h1 className="">Contact Me</h1>
       </div>
-      <section>
+      <div className="contact-container">
+        <div className="contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            Want to get in touch? I'd love to hear from you. Complete this form
+            and I will get back to you within 24 hr. You can also reach me at
+            one of the below links. I look forward to hearing from you!{" "}
+          </p>
+          <div className="contact-icons">
+            <div className="phone">
+              <FontAwesomeIcon icon={faPhoneAlt} className="contact-icon" />
+              <a href="tel:615-719-5062">+1(615)719-5062</a>
+            </div>
+            <div className="email">
+              <FontAwesomeIcon
+                icon={faEnvelopeOpenText}
+                className="contact-icon"
+              />
+              <a href="mailto:veta583518@gmail.com">veta583518@gmail.com</a>
+            </div>
+            <div className="gitHub">
+              <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+              <a href="www.github.com/veta583518">veta583518</a>
+            </div>
+            <div className="linkedin">
+              <FontAwesomeIcon icon={faLinkedinIn} className="contact-icon" />
+              <a href="https://www.linkedin.com/in/veronica-williams-279a11b8/">
+                Veronica Williams
+              </a>
+            </div>
+          </div>
+        </div>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Row>
             <Form.Group as={Col} md="8" controlId="validationCustom01">
@@ -68,7 +109,7 @@ function Contact() {
           </Form.Row>
           <Form.Row>
             <Form.Group as={Col} md="8">
-              <Form.Label htmlFor="email">Email address:</Form.Label>
+              <Form.Label htmlFor="email">Email Address:</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -111,8 +152,8 @@ function Contact() {
             Submit
           </button>
         </Form>
-      </section>
-    </section>
+      </div>
+    </div>
   );
 }
 export default Contact;
