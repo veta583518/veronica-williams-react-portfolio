@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap");
 
 :root {
-  --primary-rose-gold: rgb(179, 116, 107);
+  --primary-rose-gold: #e0bfb8;
   --secondary-smoke: #767c83;
   --tertiary-white: #ffffff;
 }
@@ -178,10 +178,11 @@ a.nav-link:active {
   padding: 30px;
   margin-right: 10px;
   height: 20rem;
+  z-index: 2;
 }
 .contact-info h3 {
   font-size: 2rem;
-  font-weight: 450px;
+  font-weight: 550;
   color: var(--secondary-smoke);
 }
 #contact-icons {
@@ -191,6 +192,7 @@ a.nav-link:active {
 .contact-info a {
   color: var(--primary-rose-gold);
   margin-left: 10px;
+  font-weight: 500;
 }
 .contact-info .contact-icon {
   color: var(--primary-rose-gold);
@@ -199,7 +201,7 @@ form {
   color: var(--secondary-smoke);
   font-weight: 700px;
   font-size: 1.25rem;
-  background-color: var(--primary-rose-gold) !important;
+  background: linear-gradient(to bottom, #edbcbc 0%, #b3746b 100%);
   flex: 0 1 60%;
   flex-direction: column;
   margin-left: 10px;
@@ -211,6 +213,7 @@ form {
   padding-left: 300px;
   padding-top: 30px;
   align-content: center;
+  z-index: 1;
 }
 .contact-label {
   justify-content: left;
@@ -222,9 +225,11 @@ form button {
   width: 10rem;
 }
 form button:hover {
-  background-color: var(--tertiary-white);
-  border-color: var(--primary-rose-gold);
-  outline: var(--primary-rose-gold);
+  background-color: #b3746b !important;
+  border-color: var(--primary-rose-gold) !important;
+  outline: var(--primary-rose-gold) !important;
+  color: var(--tertiary-white) !important;
+  font-weight: 500 !important;
 }
 form label {
   text-align: right !important;
@@ -241,7 +246,8 @@ form label {
 }
 .skill-card {
   color: var(--tertiary-white);
-  background-color: var(--primary-rose-gold) !important;
+  font-weight: 500;
+  background: linear-gradient(to bottom, #edbcbc 0%, #b3746b 100%);
 }
 .Card {
   margin-left: 2rem;

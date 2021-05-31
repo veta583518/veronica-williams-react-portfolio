@@ -148,7 +148,7 @@ function Contact() {
           </Form.Row>
           <button
             type="submit"
-            className="btn btn-lg btn-outline-light text-light mt-3 shadow-sm"
+            className="btn btn-lg btn-outline-light text-light mt-3 shadow-lg"
           >
             Submit
           </button>
