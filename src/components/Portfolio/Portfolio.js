@@ -34,14 +34,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#weatherDashboardModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
-                    show={show}
+                    // show={show}
                     id="weatherDashboardModal"
-                    onHide={() => setShow(false)}
+                    className="modal-fade"
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Weather Dashboard</Modal.Title>
@@ -81,15 +82,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#offBeatenPathModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
-                    show={show}
+                    // show={show}
                     className="modal-fade"
                     id="offBeatenPathModal"
-                    onHide={() => setShow(false)}
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Off the Beaten Path</Modal.Title>
@@ -130,15 +131,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#workdaySchedulerModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
                     className="modal-fade"
-                    show={show}
+                    // show={show}
                     id="workdaySchedulerModal"
-                    onHide={() => setShow(false)}
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Workday Scheduler</Modal.Title>
@@ -180,15 +181,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#artfulDodgerModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
-                    show={show}
+                    // show={show}
                     className="modal-fade"
                     id="artfulDodgerModal"
-                    onHide={() => setShow(false)}
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Artful Dodger</Modal.Title>
@@ -229,15 +230,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#noteTakerModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
-                    show={show}
+                    // show={show}
                     className="modal-fade"
                     id="noteTakerModal"
-                    onHide={() => setShow(false)}
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Note Taker</Modal.Title>
@@ -276,15 +277,15 @@ function Portfolio() {
                     className="details-btn"
                     data-bs-toggle="modal"
                     data-bs-target="#pokefinderModal"
-                    onClick={() => setShow(true)}
+                    // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
-                    show={show}
+                    // show={show}
                     className="modal-fade"
                     id="pokefinderModal"
-                    onHide={() => setShow(false)}
+                    // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
                       <Modal.Title>Pokefinder</Modal.Title>

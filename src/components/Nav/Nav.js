@@ -8,7 +8,7 @@ function Navi(props) {
     <section className="m-3">
       <Navbar expand="lg" variant="dark">
         {/* <Navbar bg="dark" expand="lg"></Navbar> */}
-        {/* <Navbar.Brand>Veronica Williams</Navbar.Brand> */}
+        <Navbar.Brand>Veronica Williams</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
