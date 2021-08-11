@@ -23,41 +23,44 @@ function Portfolio() {
           <Col md="4">
             <Card className="card-container" style={{ width: "18rem" }}>
               <Card.Img
-                src={WeatherDashboard}
+                src={OffBeatenPath}
                 class="d-block w-100"
-                alt="Weather Dashboard"
+                alt="Off the Beaten Path"
               />
               <Card.Body>
-                <Card.Title>Weather Dashboard</Card.Title>
+                <Card.Title>Off the Beaten Path</Card.Title>
                 <Card.Text>
                   <Button
                     className="details-btn"
                     data-bs-toggle="modal"
-                    data-bs-target="#weatherDashboardModal"
+                    data-bs-target="#offBeatenPathModal"
                     // onClick={() => setShow(true)}
                   >
                     Details
                   </Button>
                   <Modal
                     // show={show}
-                    id="weatherDashboardModal"
                     className="modal-fade"
+                    id="offBeatenPathModal"
                     // onHide={() => setShow(false)}
                   >
                     <Modal.Header closeButton>
-                      <Modal.Title>Weather Dashboard</Modal.Title>
+                      <Modal.Title>Off the Beaten Path</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                      <p>This is a description of the Weather Dashboard app!</p>
+                      <p>
+                        A simple app that helps you find hiking trails nearby
+                        your chosen location!
+                      </p>
                       <a
-                        href="https://veta583518.github.io/WeatherDashboard/"
-                        alt="weather dashboard site"
+                        href="https://craig5117.github.io/off-the-beaten-path/"
+                        alt="off the beaten path site"
                       >
                         Site
                       </a>
                       <a
-                        href="https://github.com/veta583518/WeatherDashboard"
-                        alt="weather dashboard repo"
+                        href="https://github.com/Craig5117/off-the-beaten-path"
+                        alt="off the beaten path repo"
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>
