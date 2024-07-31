@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a portfolio of my work built with React and Bootstrap.
+This is a single-page application that uses React state, props, Hooks, and reusable UI components, and Bootstrap to show off a portfolio of my work.
 
 ---
 
